@@ -18,6 +18,19 @@
     }
   });
 
+  new Swiper('.shirakawa-slider', {
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+      el: '.shirakawa-slider .swiper-pagination',
+      clickable: true
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    }
+  });
+
   const $backToTop = $('.back-to-top');
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > 400) {
